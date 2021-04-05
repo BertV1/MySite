@@ -2,27 +2,36 @@
 /*----GENERAL----*/
 /*---------------*/
 
+html,body {
+    height: 100vh;
+}
+
 body {
-    /*width: 100vw;
-    height: 100vh;*/
+    
     margin-left: auto;
     margin-right: auto;
     background-color: black;
 }
 
 main {
-    background-color: red;
-    margin: 5% 5% 5% 5%;
-    height: 100vh;
-
+    /*background-color: red;*/
+    margin: 5% 15% 5% 15%;
 }
 
 p {
-    font-size: 1em;
-    font-family: Arial 'Lucida Console' sans-serif;
-
-
+    font: 1.3em Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+    color: white;
+    /*font-family: Arial 'Lucida Console' sans-serif;*/
 }
+
+/*p::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: repeating-linear-gradient(0deg,rgba(black, 0.15),rgba(black, 0.15) 1px,transparent 1px,transparent 2px);
+}*/
 
 /*----------------*/
 /*-----TITLES-----*/
@@ -32,13 +41,17 @@ header > h1 {
     background-color: purple;
     text-align: left;
     font-size: 2.5em;
+    width: auto;
 
 }
 
 h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
     text-align: center;
-    font-size: 1.5em;
-
+    color: white;
+    font: 1.5em Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
 }
 
 /*------------------------------------------------------*/
@@ -65,6 +78,12 @@ nav > ul {
     background-color: orange;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+ul > li {
+    font-size: 1.2em;
+    border: 2em solid purple;
 }
 
 
@@ -75,27 +94,34 @@ nav > ul {
 /*----------------*/
 
 div.content_articles {
-    display:flex;
+    padding: 1em 1em 1em 1em;
+    display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: none; /*don't worry, this exists & works*/
+    white-space: normal;
+    height: 70vh;
+    background-color: black;
+    background-image: radial-gradient(rgba(0,150,0,0.75), black 120%);
+    border: 1em ridge #C9C0BB;
 }
-
 article {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    /*background-color: yellow;*/
+    /*max-height: 33%;*/
 }
 
 div.content_sections {
     display: flex;
     flex-direction: row;
-    background-color: lightblue;
+    justify-content: space-around;
+    /*background-color: lightblue;*/
 }
 
 
-section {
-    display: flex;
-    flex-direction: 
-}
+
+
 
 
 
